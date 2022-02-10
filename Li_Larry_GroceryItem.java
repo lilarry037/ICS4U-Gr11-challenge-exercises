@@ -16,7 +16,6 @@ public class Li_Larry_GroceryItem {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		
 		//obtain inputs with prompts
 		
 		System.out.println("Create a grocery list of 2 items!");
@@ -25,7 +24,9 @@ public class Li_Larry_GroceryItem {
 		
 		System.out.println("Input the price of the first grocery item:");
 		double firstPrice = sc.nextDouble();
-		sc.nextLine();
+		
+		sc.nextLine(); //to catch the "phantom input" 
+		
 		System.out.println("Input the name of the second grocery item:");
 		String secondItem = sc.nextLine();
 	
@@ -42,8 +43,9 @@ public class Li_Larry_GroceryItem {
 		//print the dotted lines at the start and end
 		System.out.println("---------------------------");
 		
-		System.out.print(firstItem);
+		//printing out the first grocery item:
 		
+		System.out.print(firstItem);
 		//print out the proper number of spaces
 		//use <= so that if the item name is exactly 20 characters, 
 		//there is still a space between the item name and price
@@ -69,16 +71,11 @@ public class Li_Larry_GroceryItem {
 		for(int i = 0; i <= spacing2; i++) {
 			System.out.print(" ");
 		}
-		
 		if(secondPrice < 10) {
 			System.out.print(" ");
 		}
-		
 		System.out.printf("$%1.2f\n", secondPrice);
-		
 		System.out.println("---------------------------");
-		
-		
 		
 	}
 
