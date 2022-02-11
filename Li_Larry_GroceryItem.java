@@ -9,7 +9,6 @@
  * --------------------------
  */
 
-
 import java.util.Scanner;
 public class Li_Larry_GroceryItem {
 
@@ -17,7 +16,6 @@ public class Li_Larry_GroceryItem {
 		Scanner sc = new Scanner(System.in);
 		
 		//obtain inputs with prompts
-		
 		System.out.println("Create a grocery list of 2 items!");
 		System.out.println("Input the name of the first grocery item:");
 		String firstItem = sc.nextLine();
@@ -39,8 +37,9 @@ public class Li_Larry_GroceryItem {
 		int spacing1 = 20 - firstItem.length();
 		int spacing2 = 20 - secondItem.length();
 		
-		//output
-		//print the dotted lines at the start and end
+		
+		//print the formatted output:
+		
 		System.out.println("---------------------------");
 		
 		//printing out the first grocery item:
@@ -53,8 +52,7 @@ public class Li_Larry_GroceryItem {
 			System.out.print(" ");
 		}
 		
-		//to properly space prices under $10, an extra space must be added
-		//add that here 
+		//to properly space prices under $10, an extra space must be added 
 		//max price that will be entered is $99.99
 		//so adding extra code for prices $100+ is not nessecary - this is sufficent
 		if(firstPrice < 10) {
