@@ -26,13 +26,11 @@ public class Li_Larry_ChampionFilter {
 
 	public static void main(String[] args) {	
 		
-		
 		try {
 			//use buffered reader to read the file
 			FileReader inputfile = new FileReader("champions.json");
 			BufferedReader br = new BufferedReader(inputfile);
 			FileWriter outputFile = new FileWriter(new File("MaxChampStats.txt"));
-			
 			
 			//declare variables
 			//variables to output
@@ -103,7 +101,6 @@ public class Li_Larry_ChampionFilter {
 		} catch (IOException e) {
 			System.out.println("Could not locate file.");
 		}
-	
 		
 	}
 }
